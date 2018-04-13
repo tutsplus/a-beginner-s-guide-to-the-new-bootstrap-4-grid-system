@@ -1,0 +1,40 @@
+// Overrides.
+$grid-columns: 16;
+$grid-gutter-width: 50px;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px
+//   xl: 1200px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 1100px
+//   xl: 1140px
+);
+
+// Load Bootstrap files.
+@import '../bower_components/bootstrap/scss/bootstrap';
+
+// Custom markup.
+.custom-container {    
+    @include make-container();
+    
+    @include media-breakpoint-up(md) {
+        width: 800px;
+    }
+}
+
+.custom-row {
+    @include make-row();
+}
+
+.custom-col {
+    @include make-col-ready();
+
+    @include make-col(5);
+}

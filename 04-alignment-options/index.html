@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS. -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <!-- Custom CSS. -->
+    <link rel="stylesheet" href="../custom.css">
+
+    <title>A beginner's guide to the new Bootstrap 4 grid system - Alignment options</title>
+</head>
+
+<body>
+
+    <div class="bootstrap-demo">
+        
+        <!-- Vertical alignment -->
+        <!-- align-items-start, align-items-center, align-items-end -->
+        <div class="container">
+            <div class="row align-items-center" style="height: 10rem; background: #f7f7f9">
+                <div class="col-2">2 columns on all devices</div>
+                <div class="col-3">3 columns on all devices</div>
+                <div class="col-7">7 columns on all devices</div>
+            </div>
+
+            <div class="row align-items-end" style="height: 10rem; background: #f7f7f9">
+                <div class="col-2">2 columns on all devices</div>
+                <div class="col-3">3 columns on all devices</div>
+                <div class="col-7">7 columns on all devices</div>
+            </div>
+
+            <!-- Self alignment -->
+            <!-- align-self-start, align-self-center, align-self-end -->
+            <div class="row" style="height: 10rem; background: #f7f7f9">
+                <div class="col-2 align-self-end">2 columns on all devices</div>
+                <div class="col-3 align-self-center">3 columns on all devices</div>
+                <div class="col-7 align-self-start">7 columns on all devices</div>
+            </div>
+        </div>
+
+        <!-- Horizontal alignment -->
+        <!-- justify-content-start, justify-content-center, justify-content-end, justify-content-around, justify-content-between -->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-2">2 columns on all devices</div>
+                <div class="col-3">3 columns on all devices</div>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-2">2 columns on all devices</div>
+                <div class="col-3">3 columns on all devices</div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col-2">2 columns on all devices</div>
+                <div class="col-3">3 columns on all devices</div>
+                <div class="col-3">3 columns on all devices</div>
+            </div>
+        </div>
+
+        <!-- Unfortunately, there are no options for self-aligning elements horizontally. -->
+    </div>
+
+</body>
+
+</html>
